@@ -1,0 +1,28 @@
+.header {
+	background-color: $c-darkturquoise;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+
+	&-list {
+		display: flex;
+		justify-content: center;
+
+		&__item {
+			list-style: none;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&__link {
+			color: $c-white;
+			font-size: 18px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		&__link.active {
+			text-decoration: underline;
+		}
+	}
+}
