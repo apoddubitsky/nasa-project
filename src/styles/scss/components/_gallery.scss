@@ -1,0 +1,44 @@
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.gallery__item {
+		cursor: pointer;
+		flex-basis: 32%;
+		margin: 5px;
+		max-height: 250px;
+		padding-bottom: 18px;
+
+		@media (max-width: $breakpoint-992) {
+			flex-basis: 48%;
+		}
+
+		@media (max-width: $breakpoint-768) {
+			flex-basis: 48%;
+			max-height: 200px;
+		}
+
+		@media (max-width: $breakpoint-576) {
+			flex-basis: 100%;
+			max-height: 250px;
+		}
+	}
+
+	.iframe-container {
+		height: 250px;
+		width: 100%;
+
+		@media (max-width: $breakpoint-768) {
+			height: 200px;
+		}
+
+		@media (max-width: $breakpoint-576) {
+			height: 250px;
+		}
+
+		.iframe {
+			pointer-events: none;
+		}
+	}
+}
